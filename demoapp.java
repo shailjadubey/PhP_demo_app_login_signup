@@ -76,7 +76,7 @@ public class demoapp {
 	WebElement pw=driver.findElement(By.xpath("//input[@name='password']"));
 	pw.sendKeys(password1);
 	js.executeScript("window.scrollBy(0,50)");
-	/*WebElement type=driver.findElement(By.id("select2-account_type-container"));
+	WebElement type=driver.findElement(By..xpath("//select[@name='type']"));
 	Select sel=new Select(type);
 	List<WebElement> m=sel.getAllSelectedOptions();
 	System.out.println("Select type from following options-");
@@ -98,7 +98,7 @@ public class demoapp {
 	else
 	{
 		sel.selectByVisibleText("Agent");
-	}*/
+	}
 WebElement sbutton=	driver.findElement(By.xpath("//button[@type='submit']"));
 	sbutton.sendKeys(Keys.ENTER);
 	dash(driver);
